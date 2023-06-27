@@ -1,0 +1,80 @@
+.min-width-200px {
+  min-width: 200px;
+}
+/* 스크롤바 전체에 대한 스타일 */
+
+::-webkit-scrollbar {
+  width: 7px; /* 스크롤바 너비 */
+  height: 1px; /* 스크롤바 높이 */
+  background-color: rgb(221, 221, 221); /* 스크롤바 배경 색상 */
+}
+
+/* 스크롤바 위쪽 화살표 */
+::-webkit-scrollbar-button:start {
+  display: none; /* 화살표를 보이지 않게 함 */
+}
+
+/* 스크롤바와 스크롤바 트랙 사이 간격 */
+::-webkit-scrollbar-track {
+  background-color: none;
+}
+
+/* 스크롤바 색상과 라운드 */
+::-webkit-scrollbar-thumb {
+  background-color: #bcbcc0;
+  border-radius: 10px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif !important;
+  margin: 10px;
+  background-color: transparent; /* 배경색을 투명으로 설정 */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/*호버 볼드 라이브러리*/
+.hover-bold:hover {
+  font-weight: bold;
+  color: #1c1e2b;
+}
+
+/*상단 메뉴바*/
+
+.top-bar {
+  height: 58px;
+  display: flex;
+  background: white;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: #dcdcdc;
+  justify-content: center;
+  position: fixed; /* 고정 위치로 설정합니다. */
+  z-index: 10;
+  box-shadow: 0px -1px 19px 0px rgba(0, 0, 0, 0.25);
+}
+
+.top-bar_ {
+  width: 800px;
+  align-items: center;
+}
+.top-bar-logo {
+  width: 79px;
+  background-color: red;
+}
+
+.top-bar ul {
+  background-color: red;
+  display: flex;
+}
+
+.top-bar ul li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #c2c2c2;
+}
+
+/* 메인 컨텐츠 */
+.main {
+  height: 4000px;
+  background-color: rgb(156, 149, 149);
+}
